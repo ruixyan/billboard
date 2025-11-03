@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 8rem;
+    text-align: center;
+    letter-spacing: -0.1em;
+  }
+  
+  .container {
+    position: absolute; /* or fixed, if you want it to stay on screen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  
+  h1 {
+    display: inline-block;
+    display: flex;
+    align-items: flex-end; /* aligns bars with text baseline */
+    justify-content: center;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  
+
+  .bar {
+    position: relative;
+    bottom: 0.123em;
+    display: inline-block;
+    width: 45px;
+    background-color: #000000;
+    margin-left: 0.05em;
+    vertical-align: baseline;
+    transition: height 0.4s ease;
+  }
+
+  .controls {
+    position: fixed;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    z-index: 9999;
+  }
+  #debug {
+    position: fixed;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    z-index: 2;
+    display: none;
+  
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.85rem;
+    font-weight:400;
+    line-height: 1.4;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 10px 14px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    text-align: left;
+    letter-spacing: normal;
+  }
+  

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billboard</title>
+    <link rel="stylesheet" href="https://use.typekit.net/fco6hob.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+          bil<span id="bar1" class="bar"></span><span id="bar2" class="bar"></span><span id="bar3" class="bar"></span><span id="bar4" class="bar"></span><span id="bar5" class="bar"></span>board
+      </h1>          
+  </div>
+
+      <!-- quick UI to test with a track id/url -->
+      <div class="controls">
+        <input id="trackInput" placeholder="Paste Spotify track URL or ID" />
+        <button id="fetchBtn">Apply Track</button>
+      </div>
+
+      <div id="debug" class="features" aria-live="polite"></div>
+
+      <!-- <div>
+        <label>Key (1–12): <input id="manualKey" type="number" min="1" max="12" value="5"></label><br>
+        <label>Tempo (BPM): <input id="manualTempo" type="number" value="120"></label><br>
+        <label>Duration (ms): <input id="manualDuration" type="number" value="200000"></label><br>
+        <label>Energy (0–1): <input id="manualEnergy" type="number" step="0.01" min="0" max="1" value="0.5"></label><br>
+        <label>Valence (0–1): <input id="manualValence" type="number" step="0.01" min="0" max="1" value="0.5"></label><br>
+        <button id="applyBtn">Apply Manual Values</button>
+      </div> -->
+      
+      <div id="debug" style="display:none; white-space: pre-wrap; margin-top: 1em;"></div>
+      
+      <!-- Bars -->
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+      <div id="bar4" class="bar"></div>
+      <div id="bar5" class="bar"></div>
+      
+
+    <script src="script.js"></script>
+    <!-- <script src="manual.js"></script> -->
+  </body>
+</html>
+
+
